@@ -48,8 +48,5 @@ if (CATKIN_ENABLE_TESTING)
   target_link_libraries(nmea_socket_node_test ${catkin_LIBRARIES})
   add_dependencies(nmea_socket_node_test nmea_socket_node nmea_msgs_gencpp)
 
-  roslaunch_add_file_check(launch/tee.launch
-    DEPENDENCIES nmea_socket_node nmea_serial_node)
-
   roslint_cpp()
 endif()

@@ -140,7 +140,7 @@ int main(int argc, char **argv)
   n_local.param("baud", baud, 115200);
 
   std::string frame_id;
-  n_local.param<std::string>("frame_id", frame_id, "navsat");
+  n_local.param<std::string>("frame_id", frame_id, "gps");
 
   ros::Timer timer = n.createTimer(ros::Duration(1.0),
                                    boost::bind(manage_connection, _1, n, port, baud, frame_id));

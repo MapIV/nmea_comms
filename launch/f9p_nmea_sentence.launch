@@ -2,8 +2,8 @@
   <arg name="port" default="/dev/ttyUSB0" />
   <arg name="baud" default="115200" />
 
-  <group ns="navsat">
-    <node pkg="nmea_comms" type="serial_node" name="nmea_serial">
+  <group ns="f9p">
+    <node pkg="nmea_comms" type="serial_node" name="nmea_serial" respawn="true">
       <param name="port" value="$(arg port)" />
       <param name="baud" value="$(arg baud)" />
     </node>
