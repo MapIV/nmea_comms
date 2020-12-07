@@ -23,3 +23,6 @@ The parameters are set in `launch/f9p_nmea_sentence.launch` .
 |:---|:---|:---|:---|
 |port|string|The serial device port to be used|/dev/ttyUSB0|
 |baud|double|Baudrate|115200|
+
+# Related packages
+- [nmea2fix](https://github.com/MapIV/nmea2fix)
