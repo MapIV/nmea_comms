@@ -13,7 +13,8 @@ source $HOME/catkin_ws/devel/setup.bash
 roslaunch nmea_comms f9p_nmea_sentence.launch
 ~~~
 
-With this launch, `/f9p/nmea_sentence (nmea_msgs/Sentence)` is published.
+With this launch, `/f9p/nmea_sentence (nmea_msgs/Sentence)` is published.  
+The topic will be published even indoors where GNSS signals cannot reach.
 
 # Parameter description
 
